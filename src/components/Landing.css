@@ -1,0 +1,32 @@
+#banner {
+  background: #333;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.bg-image {
+  color: white;
+  font-size: 2em; }
+
+img {
+  margin: 20px;
+  width: 80%;
+  height: auto; }
+
+#section-bio {
+  background: gray;
+  color: white; }
+  #section-bio p {
+    padding: 0 2em;
+    padding-bottom: 20px;
+    margin: 0; }
+
+#section-music {
+  background: #975858;
+  color: white;
+  height: 400px; }
+  #section-music h2 {
+    margin: 0;
+    padding: 20px; }
