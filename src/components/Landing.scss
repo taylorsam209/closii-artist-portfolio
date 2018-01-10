@@ -1,29 +1,32 @@
+@import "../variables.scss";
 
 #banner{
-    background: #333;
+    font-family: $font-native;
+    background: rgb(182, 28, 28);
     width:100%;
-    height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
-    // line-height:150px;
-    
 }
 
 .bg-image{
     color: white;
-    font-size:2em;
+    h2{
+        padding-bottom: 20px;
+    }
 }
 img {
     margin: 20px;
-    width: 80%;
+    width: 70%;
     height: auto;
 }
 
 #section-bio {
     background: gray;
     color: white;
+    font-family: $font-native;
     p {
+        font-family: $font-bold;
        padding:0 2em;
        padding-bottom: 20px;
        margin: 0;
@@ -31,12 +34,70 @@ img {
 }
 
 #section-music {
+    font-family: $font-native;
     background: rgb(151, 88, 88);
-    color: white;
-    height: 400px; 
+    color: white; 
         h2{
             margin: 0;
             padding: 20px;
         }
+}
+
+#section-contact {
+    overflow: auto;
+    color: white;
+    background:rgb(48, 133, 245);
+    h2 {
+        margin: 0;
+        padding: 20px;
+    }
+}
+
+.instagram {
+    text-decoration: none;
+    color: white;
+}
+
+.instagram:hover {
+    color: rgb(2, 50, 121)
     
+}
+
+.donate-btn{
+    background: white;
+    width: 100px;
+    margin: 0 auto 20px auto;
+    padding: 20px;
+   box-shadow: 2px 2px 8px black;
+}
+
+.donate-btn:hover {
+background: rgb(199, 196, 196);
+}
+
+#main-footer{
+    padding: 2em;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    a {
+    color: #2698d4;
+    text-decoration: none;
+    }
+}
+
+// Media Queries
+
+@media(min-width: 700px) {
+    #section-bio {
+        overflow: auto;
+        h2{
+            margin:0;
+            padding:20px;
+        }
+        img {
+        float: left;
+        width: 30%;
+    }
+}
 }
