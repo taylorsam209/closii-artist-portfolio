@@ -1,30 +1,19 @@
-require('dotenv').config();
-const express = require("express"),
-    bodyParser = require("body-parser"),
-    cors = require('cors'),
-    axios = require('axios'),
-    exphbs = require("express-handlebars"),
-    stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
+const cors = require('cors');
+const bodyParser =  require('body-parser');
 
-const port = process.env.PORT;
-const app = express();
-app.use(cors());
+const CORS_WHITELIST = require('./constants/frontend');
 
-//Handlebars middleware
-app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
-app.set('view engine', 'handlebars');
+const corsOptions = {
+    origin: (origin, callback) =>
+    (CORS_WHITELIST.indexOf(origin) !== -1)
+    ? callback(null, true)
+    : callback(new Error('Not allowed by CORS'))
+};
 
+const configureServer = app => {
+    app.use(cors());
 
-//Body Parser Middleware
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+    app.use(bodyParser.json());
+};
 
-//Set Static Folder
-app.use(express.static(`${__dirname}/public`))
-
-//Index Route
-app.get('/', (req, res) => {
-    res.render("index");
-});
-
-app.listen(port, () => console.log(`Running on port ${port}`))
+module.exports = configureServer;
