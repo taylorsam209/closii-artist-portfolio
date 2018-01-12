@@ -3,6 +3,11 @@ import './Landing.css';
 import music from '../assets/headOverHeels.mp3';
 import 'font-awesome/css/font-awesome.min.css';
 import Checkout from './Checkout';
+import bicycle from '../assets/bicycle.JPG';
+import flowerOfLife from '../assets/flowerOfLife.JPG';
+import classroom from '../assets/classroom.JPG';
+import stump from '../assets/stump.JPG';
+import lightSpeed from '../assets/lightSpeed.JPG';
 
 class Landing extends Component {
     constructor() {
@@ -33,14 +38,11 @@ class Landing extends Component {
         return (
             <div id="Landing">
                 <header id="banner" className='grid'>
-                    <div className="bg-image">
-                        <h1>Closii</h1>
-                        <h2>Artist of the Mind</h2>
-                    </div>
+                    <img className="bg-image" src={flowerOfLife} alt='cover' />
                 </header>
                 <main>
                     <section id="section-bio" className="grid">
-                        <img src="https://www.idjnow.com/wordpress/wp-content/uploads/2017/04/placeholder.png" alt="Carlos Perez" />
+                        <img className="bio-image" src={classroom} alt="Carlos Perez" />
                         <h2>Bio</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur
                                 adipiscing elit, sed do eiusmod tempor incididunt
@@ -79,10 +81,10 @@ class Landing extends Component {
                             </a>
                         <h3>Would you like to support? Make a donation!</h3>
                         <h4>Help fund the cost of hosting music, equipment, and live shows.</h4>
-                       
-                            <input className="input-field" type="number" step="0.01" value={this.state.donationAmount}
-                                onChange={(e) => this.handleChange(e)} placeholder="Enter dollar amount" />
-                        
+
+                        <input className="input-field" type="number" step="0.01" value={this.state.donationAmount}
+                            onChange={(e) => this.handleChange(e)} placeholder="Enter dollar amount" />
+
                         <Checkout
                             name={'Donations Appreciated'}
                             description={'Support CLOSII Music!'}

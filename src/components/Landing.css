@@ -1,20 +1,24 @@
 @import url("https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope|Fondamento|Overlock+SC");
 #banner {
+  background: #247a29;
   font-family: Overlock SC;
-  background: #b61c1c;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center; }
 
 .bg-image {
+  width: 90%;
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
   color: white; }
   .bg-image h2 {
     padding-bottom: 20px; }
 
-img {
+.bio-image {
   margin: 20px;
-  width: 70%;
+  width: 50%;
   height: auto; }
 
 #section-bio {
@@ -28,8 +32,11 @@ img {
     margin: 0; }
 
 #section-music {
+  background-color: black;
   font-family: Overlock SC;
-  background: #975858;
+  background-image: url("../assets/stump.JPG");
+  background-size: contain;
+  background-repeat: no-repeat;
   color: white; }
   #section-music h2 {
     margin: 0;

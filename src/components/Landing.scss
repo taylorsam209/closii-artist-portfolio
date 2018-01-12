@@ -1,8 +1,8 @@
 @import "../variables.scss";
 
 #banner{
+    background: rgb(36, 122, 41);
     font-family: $font-native;
-    background: rgb(182, 28, 28);
     width:100%;
     display: flex;
     align-items: center;
@@ -10,14 +10,20 @@
 }
 
 .bg-image{
+    width:90%;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+
     color: white;
     h2{
         padding-bottom: 20px;
     }
 }
-img {
+
+.bio-image {
     margin: 20px;
-    width: 70%;
+    width: 50%;
     height: auto;
 }
 
@@ -34,13 +40,16 @@ img {
 }
 
 #section-music {
+    background-color: black; 
     font-family: $font-native;
-    background: rgb(151, 88, 88);
+    background-image: url("../assets/stump.JPG");
+    background-size: contain;
+    background-repeat: no-repeat;
     color: white; 
-        h2{
-            margin: 0;
-            padding: 20px;
-        }
+    h2 {
+        margin: 0;
+        padding: 20px;
+    }
 }
 
 #section-contact {
