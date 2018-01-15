@@ -1,7 +1,23 @@
 @import "../variables.scss";
 
+body {
+    color: white;
+    font-family: $font-bold;
+    background: black;
+}
+
+h1{
+    margin:0;
+    padding:20px;
+}
+h1, h2, h3, h4 {
+font-family: $font-native;
+
+}
+
+
 #banner{
-    background: rgb(36, 122, 41);
+    background: black;
     font-family: $font-native;
     width:100%;
     display: flex;
@@ -28,9 +44,8 @@
 }
 
 #section-bio {
-    background: gray;
+    background: linear-gradient(rgb(3, 29, 68), black);
     color: white;
-    font-family: $font-native;
     p {
         font-family: $font-bold;
        padding:0 2em;
@@ -39,12 +54,12 @@
    }
 }
 
-#section-music {
-    background-color: black; 
-    font-family: $font-native;
+#section-music { 
+    background: black;
     background-image: url("../assets/stump.JPG");
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center;
     color: white; 
     h2 {
         margin: 0;
@@ -55,7 +70,7 @@
 #section-contact {
     overflow: auto;
     color: white;
-    background:rgb(48, 133, 245);
+    background: linear-gradient(black, rgb(3, 29, 68));
     h2 {
         margin: 0;
         padding: 20px;
@@ -72,19 +87,12 @@
     
 }
 
-.donate-btn{
-    background: white;
-    width: 100px;
-    margin: 0 auto 20px auto;
-    padding: 20px;
-   box-shadow: 2px 2px 8px black;
-}
-
-.donate-btn:hover {
-background: rgb(199, 196, 196);
+.input-field {
+    margin-bottom:20px;
 }
 
 #main-footer{
+    font-family: sans-serif;
     padding: 2em;
     background: #000;
     color: #fff;
@@ -97,7 +105,11 @@ background: rgb(199, 196, 196);
 
 // Media Queries
 
+
 @media(min-width: 700px) {
+    .bg-image {
+        width: 65%;
+    }
     #section-bio {
         overflow: auto;
         h2{
@@ -105,8 +117,21 @@ background: rgb(199, 196, 196);
             padding:20px;
         }
         img {
-        float: left;
+            float: left;
         width: 30%;
     }
 }
+    video {
+        width:70%;
+    }
+}
+
+@media(min-width: 999px) {
+    #section-music {
+        background-size: cover;
+    }
+
+    video {
+        width: 45%;
+    }
 }

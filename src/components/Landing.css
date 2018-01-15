@@ -1,6 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope|Fondamento|Overlock+SC");
+body {
+  color: white;
+  font-family: Fondamento;
+  background: black; }
+
+h1 {
+  margin: 0;
+  padding: 20px; }
+
+h1, h2, h3, h4 {
+  font-family: Overlock SC; }
+
 #banner {
-  background: #247a29;
+  background: black;
   font-family: Overlock SC;
   width: 100%;
   display: flex;
@@ -22,9 +34,8 @@
   height: auto; }
 
 #section-bio {
-  background: gray;
-  color: white;
-  font-family: Overlock SC; }
+  background: linear-gradient(#031d44, black);
+  color: white; }
   #section-bio p {
     font-family: Fondamento;
     padding: 0 2em;
@@ -32,11 +43,11 @@
     margin: 0; }
 
 #section-music {
-  background-color: black;
-  font-family: Overlock SC;
+  background: black;
   background-image: url("../assets/stump.JPG");
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
   color: white; }
   #section-music h2 {
     margin: 0;
@@ -45,7 +56,7 @@
 #section-contact {
   overflow: auto;
   color: white;
-  background: #3085f5; }
+  background: linear-gradient(black, #031d44); }
   #section-contact h2 {
     margin: 0;
     padding: 20px; }
@@ -57,17 +68,11 @@
 .instagram:hover {
   color: #023279; }
 
-.donate-btn {
-  background: white;
-  width: 100px;
-  margin: 0 auto 20px auto;
-  padding: 20px;
-  box-shadow: 2px 2px 8px black; }
-
-.donate-btn:hover {
-  background: #c7c4c4; }
+.input-field {
+  margin-bottom: 20px; }
 
 #main-footer {
+  font-family: sans-serif;
   padding: 2em;
   background: #000;
   color: #fff;
@@ -77,6 +82,8 @@
     text-decoration: none; }
 
 @media (min-width: 700px) {
+  .bg-image {
+    width: 65%; }
   #section-bio {
     overflow: auto; }
     #section-bio h2 {
@@ -84,4 +91,12 @@
       padding: 20px; }
     #section-bio img {
       float: left;
-      width: 30%; } }
+      width: 30%; }
+  video {
+    width: 70%; } }
+
+@media (min-width: 999px) {
+  #section-music {
+    background-size: cover; }
+  video {
+    width: 45%; } }
