@@ -48,6 +48,7 @@ class Landing extends Component {
     }
 
     render() {
+        console.log(process.env.REACT_TEST)
         return (
             <div id="Landing">
                 <header id="banner" className='grid'>
