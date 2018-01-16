@@ -29,12 +29,15 @@ h1, h2, h3, h4 {
     padding-bottom: 20px; }
 
 .bio-image {
-  margin: 20px;
+  margin: 5px;
   width: 50%;
-  height: auto; }
+  height: auto;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 5px; }
 
 #section-bio {
-  background: linear-gradient(#031d44, black);
+  background: linear-gradient(#113263, black);
   color: white; }
   #section-bio p {
     font-family: Fondamento;
@@ -43,6 +46,7 @@ h1, h2, h3, h4 {
     margin: 0; }
 
 #section-music {
+  margin-top: 20px;
   background: black;
   background-image: url("../assets/stump.JPG");
   background-size: contain;
@@ -53,10 +57,19 @@ h1, h2, h3, h4 {
     margin: 0;
     padding: 20px; }
 
+.album-cover {
+  width: 50%;
+  height: auto;
+  box-shadow: 2px 2px 3px black;
+  margin-bottom: 20px; }
+
+.track-list {
+  margin: 15px; }
+
 #section-contact {
   overflow: auto;
   color: white;
-  background: linear-gradient(black, #031d44); }
+  background: linear-gradient(black, #113263); }
   #section-contact h2 {
     margin: 0;
     padding: 20px; }
@@ -93,10 +106,21 @@ h1, h2, h3, h4 {
       float: left;
       width: 30%; }
   video {
-    width: 70%; } }
+    width: 60%; }
+  .grid1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr; } }
 
 @media (min-width: 999px) {
   #section-music {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
     background-size: cover; }
+  .album-cover {
+    width: 35%; }
   video {
-    width: 45%; } }
+    width: 45%; }
+  .grid1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr; } }
