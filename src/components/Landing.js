@@ -6,6 +6,7 @@ import flowerOfLife from '../assets/flowerOfLife.JPG';
 import bioPhoto from '../assets/intro.jpg';
 import video from '../assets/video.mp4';
 import Music from "./Music";
+import profile from "../assets/profile.jpg";
 
 class Landing extends Component {
     constructor() {
@@ -33,7 +34,7 @@ class Landing extends Component {
                 <main>
                     <section id="section-bio" className="grid">
                         <h1>ClosII Music</h1>
-                        <img className="bio-image" src={bioPhoto} alt="Carlos Perez" />
+                        <img className="bio-image" src={profile} alt="Carlos Perez" />
                         <h2>Bio</h2>
                         <p>Please give me money for new shoes. Lorem Ipsum etc erefdaofsdfosafmdof dos fadfaso
                             fdsjofs ioajfs ioanfmsio fmiasmfiasnmofo o ofdmsaoifms ofmajw9nfo dsalkm oim\avpmv

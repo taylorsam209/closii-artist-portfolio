@@ -1,8 +1,8 @@
 const FRONTEND_DEV_URLS = ['http://localhost:3000'];
 
 const FRONTEND_PROD_URLS = [
-    'https:www.closiimusic.com',
-    'https://closiimusic.com'
+    'http:www.closiimusic.com',
+    'http://closiimusic.com'
 ];
 
 module.exports = process.env.NODE_ENV ==="production" ?
