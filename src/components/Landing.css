@@ -12,7 +12,7 @@ h1, h2, h3, h4 {
   font-family: Overlock SC; }
 
 #banner {
-  background: black;
+  background: linear-gradient(#113263, black);
   font-family: Overlock SC;
   width: 100%;
   display: flex;
@@ -37,7 +37,6 @@ h1, h2, h3, h4 {
   border-width: 5px; }
 
 #section-bio {
-  background: linear-gradient(#113263, black);
   color: white; }
   #section-bio p {
     font-family: Fondamento;

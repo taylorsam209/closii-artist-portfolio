@@ -17,7 +17,7 @@ font-family: $font-native;
 
 
 #banner{
-    background: black;
+    background: linear-gradient(rgb(17, 50, 99), black );
     font-family: $font-native;
     width:100%;
     display: flex;
@@ -47,7 +47,6 @@ font-family: $font-native;
 }
 
 #section-bio {
-    background: linear-gradient(rgb(17, 50, 99), black);
     color: white;
     p {
         font-family: $font-bold;
