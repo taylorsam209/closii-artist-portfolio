@@ -3,7 +3,6 @@ import './Landing.css';
 import 'font-awesome/css/font-awesome.min.css';
 import Checkout from './Checkout';
 import flowerOfLife from '../assets/flowerOfLife.JPG';
-import bioPhoto from '../assets/intro.jpg';
 import video from '../assets/video.mp4';
 import Music from "./Music";
 import profile from "../assets/profile.jpg";
@@ -36,10 +35,14 @@ class Landing extends Component {
                         <h1>ClosII Music</h1>
                         <img className="bio-image" src={profile} alt="Carlos Perez" />
                         <h2>Bio</h2>
-                        <p>Please give me money for new shoes. Lorem Ipsum etc erefdaofsdfosafmdof dos fadfaso
-                            fdsjofs ioajfs ioanfmsio fmiasmfiasnmofo o ofdmsaoifms ofmajw9nfo dsalkm oim\avpmv
-                            vsavcpaksuvj auvnizjnv knaij valuevvao vmosmo ij9uvawr9gnawo ndvskvcosnoino
-                            fiajfdj9wjfoisa jfoiawgfihwoug owjfowiakfoj dwojadfwj90jvoi oadfmsoi afidjowfion.
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna
+                             aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                              laboris nisi ut aliquip ex ea commodo consequat.
+                              Duis aute irure dolor in reprehenderit in voluptate velit esse
+                              cillum dolore eu fugiat nulla pariatur. Excepteur
+                              sint occaecat cupidatat non proident, sunt in culpa qui officia
+                              deserunt mollit anim id est laborum
                         </p>
                     </section>
                     <Music />
@@ -54,7 +57,7 @@ class Landing extends Component {
                         <h2>Reach Out and Connect</h2>
                         <p>closii@musicislife.com</p>
                         <a className="instagram" href="https://www.instagram.com/closprez/" target="_blank" rel="noopener noreferrer">
-                            <i className="fa fa-instagram fa-2x" aria-hidden="true"></i> Follow me on Instagram at closprez
+                            <i className="fa fa-instagram fa-2x" aria-hidden="true"></i>  Click for Instagram
                             </a>
                         <h3>Would you like to support? Make a donation!</h3>
                         <h4>Help fund the cost of hosting music, equipment, and live shows.</h4>
