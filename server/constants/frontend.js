@@ -5,6 +5,6 @@ const FRONTEND_PROD_URLS = [
     'http://closiimusic.com'
 ];
 
-module.exports = process.env.NODE_ENV ==="production" ?
+module.exports = process.env.REACT_APP_NODE_ENV ==="production" ?
 FRONTEND_PROD_URLS
 :FRONTEND_DEV_URLS;
