@@ -20,9 +20,6 @@ font-family: $font-native;
     background: linear-gradient(rgb(17, 50, 99), black );
     font-family: $font-native;
     width:100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .bg-image{
@@ -46,7 +43,7 @@ font-family: $font-native;
     border-width: 5px;
 }
 
-#section-bio {
+.bio-description {
     color: white;
     p {
         font-family: $font-bold;
@@ -118,22 +115,29 @@ font-family: $font-native;
 }
 
 // Media Queries
-
-
 @media(min-width: 700px) {
     .bg-image {
         width: 65%;
     }
-    #section-bio {
-        overflow: auto;
-        h2 {
-            margin:0;
-            padding:20px;
-        }
-        img {
-            float: left;
+    .bio-image {
         width: 30%;
+    }
+
+    .bio-flex {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 50px;
+        .bio-description {
+            p {
+                padding: 0px 50px !important;
+            }
         }
+    }
+
+    .album-cover{
+        width: 30%;
     }
     video {
         width:60%;
@@ -145,22 +149,40 @@ font-family: $font-native;
 }
 
 @media(min-width: 999px) {
+    #banner {
+        margin-bottom: 30px;
+        .bg-image {
+            width: 35%;
+        }
+    }
+    
+    .bio-image {
+        margin-left: 70px;
+        width: 20%;
+    }
+    .bio-description  {
+        padding: 0px 80px;
+        p {
+            font-size:18px;
+        }
+    }
+
     #section-music {
         margin-left: auto;
         margin-right: auto;
-        width:70%;
+        width:90%;
         background-size: cover;
-    }
-
-    .album-cover{
-        width: 35%;
+        .album-cover{
+            width: 30%;
+        }
+        .grid1 {
+            display: grid;
+           grid-template-columns: 1fr 1fr;
+        }
     }
 
     video {
-        width: 45%;
+        width: 40%;
     }
-    .grid1 {
-        display: grid;
-       grid-template-columns: 1fr 1fr;
-    }
+    
 }

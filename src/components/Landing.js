@@ -29,21 +29,25 @@ class Landing extends Component {
             <div id="Landing">
                 <header id="banner" className='grid'>
                     <img className="bg-image" src={flowerOfLife} alt='cover' />
+                        <h1>ClosII Music</h1>
                 </header>
                 <main>
                     <section id="section-bio" className="grid">
-                        <h1>ClosII Music</h1>
-                        <img className="bio-image" src={profile} alt="Carlos Perez" />
-                        <h2>Bio</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut labore et dolore magna
-                             aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                              laboris nisi ut aliquip ex ea commodo consequat.
-                              Duis aute irure dolor in reprehenderit in voluptate velit esse
-                              cillum dolore eu fugiat nulla pariatur. Excepteur
-                              sint occaecat cupidatat non proident, sunt in culpa qui officia
-                              deserunt mollit anim id est laborum
-                        </p>
+                        <div className="bio-flex">
+                            <img className="bio-image" src={profile} alt="Carlos Perez" />
+                            <div className="bio-description">
+                                <h2>Bio</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna
+                                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                      laboris nisi ut aliquip ex ea commodo consequat.
+                                      Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                      cillum dolore eu fugiat nulla pariatur. Excepteur
+                                      sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                      deserunt mollit anim id est laborum
+                                </p>
+                            </div>
+                        </div>
                     </section>
                     <Music />
                     <section id="section-video" className='grid'>
