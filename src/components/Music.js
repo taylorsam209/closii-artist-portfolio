@@ -27,7 +27,7 @@ class Music extends Component {
                     album: "Teach This EP"
                 },
                 {
-                    track: "3. Pacha Mama",
+                    track: "3. PachaMama",
                     src: pachaMama,
                     artist: "Closii",
                     album: "Teach This EP"
