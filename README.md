@@ -17,7 +17,7 @@ Link http://closiimusic.com
 ## Views
 <br><br>
 <p align="center">
-    <img src="https://github.com/taylorsam209/closii-artist-portfolio/blob/master/src/assets/closii-bio.PNG" width="700">
+    <img src="https://github.com/taylorsam209/closii-artist-portfolio/blob/master/src/assets/closii-bio.PNG" width="500">
 </p> 
 <p align="center">
     Bio Section
@@ -25,7 +25,7 @@ Link http://closiimusic.com
 
 <br><br>
 <p align="center">
-    <img src="https://github.com/taylorsam209/closii-artist-portfolio/blob/master/src/assets/closii-music.PNG" width="700">
+    <img src="https://github.com/taylorsam209/closii-artist-portfolio/blob/master/src/assets/closii-music.PNG" width="500">
 </p> 
 <p align="center">
     Music Section showcasing original work
@@ -33,17 +33,8 @@ Link http://closiimusic.com
 
 <br><br>
 <p align="center">
-    <img src="https://github.com/taylorsam209/closii-artist-portfolio/blob/master/src/assets/closii-video.PNG" width="700">
+    <img src="https://github.com/taylorsam209/closii-artist-portfolio/blob/master/src/assets/closii-video.PNG" width="500">
 </p> 
 <p align="center">
     Video Section with Stripe Checkout Donation
 </p> 
-
-<br><br>
-<p align="center">
-    <img src="https://github.com/taylorsam209/calendar-scheduler/blob/master/src/assets/calendar-appointment.PNG" width="700">
-</p> 
-<p align="center">
-    Calendar view with appointments set.
-</p> 
-
